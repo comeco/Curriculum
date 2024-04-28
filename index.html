@@ -6,10 +6,13 @@
     <title>X's Capstone</title>
 </head>
 <body>
+    <header>
     <h1>Xavier Navarro</h1>
+    </header>
     <h2>Summary</h2>
     <p>My name is Xavier Navarro. I am a seasoned fullstack developper. I am interested in web development.</p>
     <p>I have more than 14 years of experience in the IT indusry in all kinds of positions, from Business analysis to fullstack developper.</p>
+    <button onclick="addCSS()" id="button">Toggle CSS</button>
     <hr />
     <h2>Education</h2>
     <ul>
@@ -146,5 +149,17 @@
     <footer>
         <p>© Xavier Navarro. All rights reserved.</p>
       </footer>
+      <script>
+        let counter = 0;
+        function addCSS() {
+          counter++;
+          if (counter % 2 !== 0) {
+            document.head.innerHTML += '<link rel="stylesheet" href="./styles.css" />';
+          } else {
+            document.head.innerHTML = '<title>Xavier Navarro</title>';
+          }
+        }
+
+      </script>
 </body>
 </html>

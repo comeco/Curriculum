@@ -3,163 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X's Capstone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>X's CV</title>
 </head>
 <body>
-    <header>
-    <h1>Xavier Navarro</h1>
+    <header class="header" id=""><div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use><h1>Xavier Navarro Lopez</h1></svg>
+            </a>
+  
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li>
+                <a href="#" class="nav-link text-white mt-3" id="Btn-full-cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                        <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                  Full CV
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white mt-3" id="Btn-dev-cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                      </svg>
+                  Developer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white mt-3" id="Btn-func-cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                      </svg>
+                  Non-Technical
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white mt-3" id="Btn-man-cv">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                        <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                      </svg>
+                  Leadership
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
     </header>
-    <h2>Summary</h2>
-    <p>My name is Xavier Navarro. I am a seasoned fullstack developper. I am interested in web development.</p>
-    <p>I have more than 14 years of experience in the IT indusry in all kinds of positions, from Business analysis to fullstack developper.</p>
-    <button onclick="addCSS()" id="button">Toggle CSS</button>
-    <hr />
-    <h2>Education</h2>
-    <ul>
-        <li><b>Universitat de Barcelona. Bachelor degree in Business Administration</b><br />
-            September 2002 - June 2006
-        </li>
-        <li><b>IES Jaume Balmes. Undergraduate degree in IT Systems Administration</b><br />
-            September 2000 - June 2002
-        </li>
-    </ul>
-    <hr />
-    <h2>Work Experience</h2>
-    <ul>
-        <li><b>Dentsu Tracking. Product Owner</b><br />
-            Since April 2023 
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Sopra Steria. Business Analyst and Team Leader</b><br />
-            November 2021 - April 2023
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Quidgest Timor-Lests. Country Manager</b><br />
-            December 2019 - November 2021
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Quidgest Timor-Lests. Project Manager</b><br />
-            January 2018 - December 2019
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Quidgest Timor-Lests. Senior software developer & Tech Lead</b><br />
-            November 2013 - January 2018
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Quidgest Angola. Senior software developer</b><br />
-            June 2013 - November 2013
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-        <li><b>Quidgest El Salvador. Senior software developer</b><br />
-            March 2013 - June 2013
-            <ul>
-                <li>Task1</li>
-                <li>Task2</li>
-                <li>Task3</li>
-            </ul>
-        </li>
-       <li><b>Quidgest Portugal. Junior software developer</b><br />
-        January 2012 - March 2013
+
+
+    <div class = "summary">
+        <h2>Summary</h2>
+            <div class="full-summary"><p>With over a decade of experience across diverse roles in software development, business analysis, and project management, I bring a wealth of expertise to the table. Currently serving as a Product Owner at Dentsu Tracking, I lead the development of track and trace solutions, ensuring they align with client needs and meet expectations. My role involves managing the backlog, roadmap, and continuous communication with stakeholders, including representatives from the European Commission and HMRC. Notably, our track and trace solutions for tobacco stand as one of the largest globally, monitoring tobacco circulation across the European Union and the United Kingdom.</p>
+                <p>Prior to my current position, I served as a Senior Business Analyst at Sopra Steria, CSE Spain, where I played a key role in client projects, from requirement gathering to mentoring junior developers. My proficiency extends to Agile methodologies and a range of technologies, including Microsoft Office, Azure DevOps, and AWS.</p>
+                <p>Before that, I held various positions at Quidgest, S.A., where I championed No-Code software development principles using in-house tools like Genio. From strategic management systems to veterans' database processes, my work spanned diverse domains, reflecting my adaptability and problem-solving skills.</p>
+                <p>With a background in business science and extensive language proficiency in English, Spanish, Catalan, Portuguese, and Tetum, I thrive in multicultural environments. My passion for innovation, coupled with strong interpersonal skills and technical prowess, makes me a valuable asset in any organization aiming for excellence in software development and project management.</p></div>
+            <div class="dev-summary"><p>I bring over a decade of comprehensive programming experience to the table, specializing in a multitude of programming languages and technologies such as C#, ASP.NET, C++, and SQL. Currently serving as a Product Owner at Dentsu Tracking, I leverage my expertise to lead the development of track and trace solutions. My responsibilities encompass managing the backlog, roadmap, and ensuring seamless communication with stakeholders.</p>
+                <p>In my previous role as a Senior Business Analyst at Sopra Steria, CSE Spain, I contributed significantly to client projects while honing my programming skills. I have a strong foundation in Agile methodologies and technologies like Microsoft Office, Azure DevOps, and AWS.</p>
+                <p>My programming journey began at Quidgest, S.A., where I championed No-Code software development using tools like Genio. From strategic management systems to veterans' database processes, I have tackled diverse programming tasks across various domains, showcasing adaptability and problem-solving skills.</p> 
+                <p>With a background in business science and extensive language proficiency in English, Spanish, Catalan, Portuguese, and Tetum, I thrive in multicultural environments. My passion for programming, coupled with strong interpersonal skills, positions me as a valuable asset in any organization aiming for excellence in software development.</p></div>
+            <div class="func-summary"><p>My professional journey spans over a decade, primarily focusing on functional roles within software development and project management. Currently serving as a Product Owner at Dentsu Tracking, I drive the development of track and trace solutions, ensuring they meet client requirements and align with business objectives. My responsibilities include managing the backlog, roadmap, and fostering collaboration with stakeholders to deliver high-quality solutions.</p>
+                <p>In my previous role as a Senior Business Analyst at Sopra Steria, CSE Spain, I played a pivotal role in client projects, bridging the gap between business needs and technical implementation. I excelled in gathering and analyzing requirements, guiding development teams, and ensuring client satisfaction. Proficient in Agile methodologies, I facilitated effective communication and collaboration across project teams.</p>
+                <p>My journey began at Quidgest, S.A., where I championed No-Code software development principles, focusing on functional aspects of solution design and implementation. From strategic management systems to veterans' database processes, I applied my expertise in understanding and addressing business challenges through technology.</p> 
+                <p>With a background in business science and proficiency in multiple languages, including English, Spanish, Catalan, Portuguese, and Tetum, I bring a holistic perspective to functional roles within software development. My passion for aligning technology with business needs, coupled with strong interpersonal skills, positions me as a valuable asset in any organization aiming for excellence in functional profiles and project management.</p></div>
+            <div class="man-summary"><p>With over a decade of diverse experience, I have cultivated a robust management profile within the software development domain. As a Country Director at Quidgest, S.A., I played a pivotal role in driving business growth and overseeing operations, particularly in Timor-Leste. Leveraging my leadership skills, I navigated complex business landscapes, built strategic partnerships, and ensured the successful implementation of software solutions tailored to local requirements.</p>
+                <p>Currently serving as a Product Owner at Dentsu Tracking, I lead cross-functional teams in the development of track and trace solutions, ensuring alignment with business objectives and client needs. My strategic planning, backlog management, and stakeholder engagement skills have been instrumental in delivering impactful solutions, notably in the tobacco monitoring sector across the European Union and the United Kingdom.</p>
+                <p>In my previous role as a Senior Business Analyst at Sopra Steria, CSE Spain, I further honed my management capabilities by leading project teams and mentoring junior developers. By fostering collaboration and implementing Agile methodologies, I facilitated the successful delivery of client projects while driving continuous improvement within the team.</p>
+                <p>Throughout my career, I have applied my management expertise to drive innovation and efficiency in software development processes. At Quidgest, S.A., I championed No-Code software development principles, optimizing project workflows and maximizing team productivity. My experience spans diverse domains, from strategic management systems to veterans' database processes, showcasing my adaptability and problem-solving skills.</p> 
+                <p>With a background in business science and proficiency in multiple languages, including English, Spanish, Catalan, Portuguese, and Tetum, I thrive in multicultural environments. My passion for leadership, coupled with strong interpersonal skills and technical expertise, positions me as a valuable asset in any organization aiming for excellence in management profiles within the software development industry.</p></div>
+
+        <hr />
+    </div>
+    <div class="education">
+        <h2>Education</h2>
         <ul>
-            <li>Task1</li>
-            <li>Task2</li>
-            <li>Task3</li>
+            <li><p class="ed-degree">Business Administration (Erasmus)</p>
+                <p class="ed-school">HEC – Ecole de Gestion de l’Université de Liège, Belgium</p>
+                <p class="ed-years">2008-2009</p>
+                
+                <p class="ed-summary">Engaged in a diverse range of subjects, including supply chain management, econometrics, finances, and theory of economic competition and regulations, providing a broad understanding of business administration.</p>
+            </li>
+            <li><p class="ed-degree">Bachelor in Business Science</p>
+                <p class="ed-school">Universitat de Barcelona, Spain</p>
+                <p class="ed-years">2002-2006</p>
+                
+                <p class="ed-summary">Studied a comprehensive curriculum covering various aspects of business management, including accounting, marketing, economics, and international trade law.</p>
+            </li>
+            <li><p class="ed-degree">Professional Degree in IT Systems Administration</p>
+                <p class="ed-school">IES Jaume Balmes, Barcelona, Spain</p>
+                <p class="ed-years">2000-2002</p>
+                
+                <p class="ed-summary">Acquired practical skills in IT systems administration, including hardware and software administration, systems and databases management, programming, and networks.</p>
+            </li>
+
+
+<!--             <li><b>Universitat de Barcelona. Bachelor degree in Business Administration</b><br />
+                September 2002 - June 2006
+            </li>
+            <li><b>IES Jaume Balmes. Undergraduate degree in IT Systems Administration</b><br />
+                September 2000 - June 2002
+            </li> -->
         </ul>
-        </li>
-        <li><b>Quidgest Timor-Leste. Junior software developer</b><br />
-         October 2011 - January 2012
+        <hr />
+    </div>
+    <div class="work">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><b>Dentsu Tracking. Product Owner</b><br />
+                Since April 2023 
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Sopra Steria. Business Analyst and Team Leader</b><br />
+                November 2021 - April 2023
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest Timor-Lests. Country Manager</b><br />
+                December 2019 - November 2021
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest Timor-Lests. Project Manager</b><br />
+                January 2018 - December 2019
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest Timor-Lests. Senior software developer & Tech Lead</b><br />
+                November 2013 - January 2018
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest Angola. Senior software developer</b><br />
+                June 2013 - November 2013
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest El Salvador. Senior software developer</b><br />
+                March 2013 - June 2013
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+        <li><b>Quidgest Portugal. Junior software developer</b><br />
+            January 2012 - March 2013
             <ul>
                 <li>Task1</li>
                 <li>Task2</li>
                 <li>Task3</li>
             </ul>
-        </li>
-        <li><b>Quidgest Portugal. Junior Business Analyst</b><br />
-            December 2010 - October 2011
-               <ul>
-                   <li>Task1</li>
-                   <li>Task2</li>
-                   <li>Task3</li>
-               </ul>
-           </li>
-        <li><b>CEIP Poeta Foix. IT Teacher</b><br />
-            January 2002 - June 2008
-               <ul>
-                   <li>Task1</li>
-                   <li>Task2</li>
-                   <li>Task3</li>
-               </ul>
-           </li>
-    </ul>
+            </li>
+            <li><b>Quidgest Timor-Leste. Junior software developer</b><br />
+            October 2011 - January 2012
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>Quidgest Portugal. Junior Business Analyst</b><br />
+                December 2010 - October 2011
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+            <li><b>CEIP Poeta Foix. IT Teacher</b><br />
+                January 2002 - June 2008
+                <ul>
+                    <li>Task1</li>
+                    <li>Task2</li>
+                    <li>Task3</li>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+    </div>
+    <h2>Languages</h2> <br />    
+    <div class="lang-list">
+        <div class = "lang">
+            <p id="en">English</p>
+            <p>Full professional</p>
+        </div>
+        <div class = "lang">
+            <p id="es">Spanish</p>
+            <p>Native</p>
+        </div>
+        <div class = "lang">
+            <p id="pt">Portuguese</p>
+            <p>Full professional </p>
+        </div>
+        <div class = "lang">
+            <p id="fr">French</p>
+            <p>Delf B2</p>
+        </div>
+        <div class = "lang">
+            <p id="ca">Catalan</p>
+            <p>Native</p>
+        </div>
+        <div class = "lang">
+            <p id ="te">Tetum</p>
+            <p>Advanced</p>
+        </div>
+    </div>
     <hr />
-    <h2>Languages</h2>
-    <ul>
-        <li>English</li>
-        <li>Spanish</li>
-        <li>Portuguese</li>
-        <li>French</li>
-        <li>Tetum</li>
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-        <li>C++ (MFC): ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>C# MVC: ⭐️⭐️⭐️⭐️</li>
-        <li>.NET: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>SQL: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>HTML:⭐️⭐️⭐️⭐️⭐️</li>
-        <li>CSS: ⭐️⭐️⭐️</li>
-        <li>JavaScript (Vanilla): ⭐️⭐️⭐️</li>
-        <li>AWS: ⭐️⭐️⭐️</li>
-        <li>Jira: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>Azure DevOps: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>Business Analysis: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>Client requirements: ⭐️⭐️⭐️⭐️⭐️</li>
-        <li>Project delivery: ⭐️⭐️⭐️⭐️⭐️</li>
-    </ul>
-    <hr>
-    <h2>Awards</h2>
-    <hr />
-    <h2>References</h2>
-    <p>Available on request.</p>
+    <div class="skills">
+    <h2>Key Skills and Expertise:</h2>
+        <ul>
+<!--             <li>C++ (MFC): ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>C# MVC: ⭐️⭐️⭐️⭐️</li>
+            <li>.NET: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>SQL: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>HTML:⭐️⭐️⭐️⭐️⭐️</li>
+            <li>CSS: ⭐️⭐️⭐️</li>
+            <li>JavaScript (Vanilla): ⭐️⭐️⭐️</li>
+            <li>AWS: ⭐️⭐️⭐️</li>
+            <li>Jira: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>Azure DevOps: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>Business Analysis: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>Client requirements: ⭐️⭐️⭐️⭐️⭐️</li>
+            <li>Project delivery: ⭐️⭐️⭐️⭐️⭐️</li> -->
+
+            <li>Product Ownership &amp; Roadmap Development</li>
+            <li>Stakeholder Management &amp; Client Relationship</li>
+            <li>Agile Methodologies (Scrum, Kanban)</li>
+            <li>Business Analysis &amp; Requirement Gathering</li>
+            <li>Team Leadership &amp; Mentoring</li>
+            <li>No-Code &amp; Low-Code Development</li>
+            <li>Software Development (C#, C++, ASP.NET, jQuery, NodeJs, ReactJs)</li>
+            <li>Databases (SQL, PostgreSQL, MySQL)</li>
+            <li>Cloud Technologies (AWS, Azure)</li>
+            <li>Data Extraction &amp; Testing</li>
+            <li>Project Management &amp; Strategy Implementation</li>
+        </ul>
+        <hr />
+    </div>
+
+    <div class="awards">
+        <h2>Awards</h2>
+        <div class="award">"COMPUTERWORLD &amp; CIO 2013" in the Emerging Technologies, Innovation and Social 
+                Entrepreneurship category (Project URL:<a href="https://www.computerworld.es/sociedad-de-la-informacion/i-premios-computerworld--cio-iberoamericanos-ganadores-de-esta-edicion-y-fotografias-de-la-ceremonia" target=”_blank”> 
+                    https://www.computerworld.es/sociedad-de-la-informacion/i-premios-computerworld--cio-iberoamericanos-ganadores-de-esta-edicion-y-fotografias-de-la-ceremonia ).(2012).</a></div>
+        <hr />
+    </div>
+
+    <div class="references">
+        <h2>References</h2>
+        <p>Available on request.</p>
+    </div>
+
     <footer>
         <p>© Xavier Navarro. All rights reserved.</p>
-      </footer>
-      <script>
-        let counter = 0;
-        function addCSS() {
-          counter++;
-          if (counter % 2 !== 0) {
-            document.head.innerHTML += '<link rel="stylesheet" href="./styles.css" />';
-          } else {
-            document.head.innerHTML = '<title>Xavier Navarro</title>';
-          }
-        }
+    </footer>
 
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts/profiles.js"></script>
 </body>
 </html>

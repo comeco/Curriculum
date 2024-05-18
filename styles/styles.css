@@ -115,3 +115,9 @@
     background-color: #00808087;
     font-weight: bold;
   }
+
+  .tasklist {
+    list-style: none;
+    padding: 0;
+    margin-left: 0.5rem;
+  }
